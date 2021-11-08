@@ -13,8 +13,7 @@ sel <- c("CANTVILLE", "REGION", "DEPT", "IPONDI",
          "TACT", "AGER20", "NA5")
 
 # lecture du fichier
-# rp18 <- read_csv2(file = "~/Documents/data/FD_INDCVI_2018.csv")
-
+# rp18 <- read_csv2(file = "~/Documents/data/FD_INDCVI_2018.csv",
 #                   col_types = list(character=(c("REGION", "DEPT", "CATL", "AGER20",
 #                                              "CS1", "DIPL", "EMPL", "TACT", "NA5"))))
 
