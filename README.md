@@ -12,9 +12,11 @@ https://www.insee.fr/fr/statistiques/5542859?sommaire=5395764
 
 2. [R-cran](https://cran.r-project.org/) *binary base system for Linux/Windows/macOS*.
 
+3. *`R` packages : [data.table](https://cran.r-project.org/web/packages/data.table/vignettes/datatable-intro.html) or [tidyverse](https://cran.r-project.org/web/packages/tidyverse/vignettes/paper.html)*.
+
 *OPTIONAL*
 
-3. [RStudio ®](https://www.rstudio.com/) 
+4. [RStudio ®](https://www.rstudio.com/) 
 
 ## Configuration
 
