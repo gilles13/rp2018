@@ -16,8 +16,8 @@ rp18 <- fread(file = "~/Documents/data/FD_INDCVI_2018.csv",
                                              "CS1", "DIPL", "EMPL", "TACT", "NA5"))))
 
 # rp18[REGION == "93",
-# 		 .(n = sum(IPONDI)),
-# 		 by = DEPT][, .(n = n, prop = round(100*n/sum(n),2))]
+#      .(n = sum(IPONDI)),
+#      by = DEPT][, .(n = n, prop = round(100*n/sum(n),2))]
 
 # hab ~ REG + DEPT
 d01 <- rp18[, {
@@ -73,17 +73,14 @@ library("ggplot2")
 
 # hab par DEPT en PACA
 g1 <- ggplot(data = d01[REGION == "93"],
-						 mapping = aes(x = DEPT, y = n)) +
-	geom_bar(stat = "identity")
+             mapping = aes(x = DEPT, y = n)) +
+  geom_bar(stat = "identity")
 g1
 
 
 # hab par REG + AGER20
-
-d03
-
 g2 <- ggplot(data = d03[REGION == "93"],
-						 mapping = aes(x = DEPT,
-													 y = n),
-						 col = "ager20",
-						 stat = "stack")
+             mapping = aes(x = DEPT,
+                           y = n),
+             col = "ager20",
+             stat = "stack")
